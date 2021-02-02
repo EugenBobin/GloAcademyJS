@@ -6,3 +6,7 @@ let addExpenses;
 let deposit; 
 let mission; 
 let period;
+
+alert("Обязательное сообщение из задания");
+
+console.log("Обязательное сообщение из задания");
