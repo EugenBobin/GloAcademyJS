@@ -1,12 +1,22 @@
 // объявляются переменные из задания
 
-let money;
-let income; 
-let addExpenses; 
-let deposit; 
-let mission; 
-let period;
+let money = 100;
+let income = 'мойка машин'; 
+let addExpenses = 'Интернет, Такси, Коммуналка'; 
+let deposit = false; 
+let mission = 200; 
+let period = 6;
 
-alert("Обязательное сообщение из задания");
+console.log(typeof money);
+console.log(typeof income);
+console.log(typeof deposit);
+console.log('Длина строки addExpenses ' + addExpenses.length + 'символов');
+console.log('Период равен ' + period + ' месяцев');
+console.log('Цель заработать ' + mission + ' рублей/долларов/гривен/юани');
+addExpenses = addExpenses.toLowerCase();
+let addExpensesArray = addExpenses.split('');
 
-console.log("Обязательное сообщение из задания");
+console.log(addExpensesArray);
+
+let budgetDay = money / 30;
+console.log(budgetDay);
