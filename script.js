@@ -4,6 +4,35 @@ String.prototype.firstLetterCaps = function() {
   return this.charAt(0).toUpperCase() + this.slice(1);
 };
 
+// получаем элементы страницы в переменные
+let calculateButton = document.getElementById('start');
+let plusButton1 = document.getElementsByTagName('button')[0];
+let plusButton2 = document.getElementsByTagName('button')[1];
+let checkboxButton = document.querySelector('#deposit-check');
+let inputsAdditionalIncomeItem = document.querySelectorAll('.additional_income-item');
+
+let elementsClassValue = document.querySelectorAll('[class*="-value"]');
+let varBudgetMonthValue = document.getElementsByClassName('budget_month-value');
+let varBudgetDayValue = document.getElementsByClassName('budget_day-value');
+let varExpensesMonthValue = document.getElementsByClassName('expenses_month-value');
+let varAdditionalIncomeValue = document.getElementsByClassName('additional_income-value');
+let varAdditionalExpensesValue = document.getElementsByClassName('additional_expenses-value');
+let varIncomePeriodValue = document.getElementsByClassName('income_period-value');
+let varTargetMonthValue = document.getElementsByClassName('target_month-value');
+
+let varSalaryAmount = document.querySelector('.salary-amount');
+let varIncomeTitle = document.querySelector('.income-title');
+let varIncomeAmount = document.querySelector('.income-amount');
+let varAdditionalIncomeItem1 = document.querySelectorAll('.additional_income-item')[0];
+let varAdditionalIncomeItem2 = document.querySelectorAll('.additional_income-item')[1];
+let varExpensesTitle = document.querySelector('.expenses-title');
+let varExpensesAmount = document.querySelector('.expenses-amount');
+let varAdditionalExpensesItem = document.querySelector('.additional_expenses-item');
+
+let varTargetAmount = document.querySelector('.target-amount');
+let varPeriodSelect = document.querySelector('.period-select');
+
+
 let money = 100;
 let expenses = [];
 
@@ -128,11 +157,11 @@ let showObject = function(object){
  }
 };
 
-start();
-appData.asking();
-console.log(appData.addExpenses);
-appData.getExpensesMonth();
-appData.getBudget();
+//start();
+//appData.asking();
+//console.log(appData.addExpenses);
+//appData.getExpensesMonth();
+//appData.getBudget();
 
 
 //console.log('money ', money);
